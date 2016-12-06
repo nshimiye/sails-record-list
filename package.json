@@ -3,7 +3,13 @@
   "private": true,
   "version": "1.0.0",
   "description": "Add new record to a list using sailsjs built-in query language",
-  "keywords": [ "sailsjs", "database", "saving", "list", "update" ],
+  "keywords": [
+    "sailsjs",
+    "database",
+    "saving",
+    "list",
+    "update"
+  ],
   "dependencies": {
     "ejs": "2.3.4",
     "grunt": "1.0.1",
@@ -20,6 +26,7 @@
     "grunt-sync": "0.5.2",
     "handlebars": "^4.0.6",
     "include-all": "^1.0.0",
+    "one-liner-joke": "^1.0.0",
     "rc": "1.0.1",
     "sails": "~0.12.11",
     "sails-disk": "~0.10.9"

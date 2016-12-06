@@ -2,7 +2,7 @@
 @Author: mars
 @Date:   2016-12-05T17:00:57-05:00
 @Last modified by:   mars
-@Last modified time: 2016-12-05T20:23:21-05:00
+@Last modified time: 2016-12-05T20:34:47-05:00
 -->
 
 # sails-record-list
@@ -13,6 +13,9 @@ User wants to receive one joke everyday.
 
 # End goal
 Create a log of jokes owned by a specific user
+```
+foundUser.dailyJokes.add(jokeData);
+```
 
 # Step by step
 
@@ -50,9 +53,9 @@ return DatabaseAccessService.userSaveJoke(userId, { content, author, source });
 ...
 
 ```
-[link to complete function]()
+[link to complete function](https://github.com/nshimiye/sails-record-list/blob/master/api/controllers/UserController.js#L37)
 ```javascript
-// [api/services/DatabaseAccessPrivateUser.js]()
+// api/services/DatabaseAccessPrivateUser.js
 
 ...
 User.findOne({ id }).populate('dailyJokes')
@@ -62,8 +65,8 @@ return this.updateUser(foundUser)
 ...
 
 ```
-[link to complete function]()
-[link updateUser function]()
+[link to complete function](https://github.com/nshimiye/sails-record-list/blob/master/api/services/DatabaseAccessPrivateUser.js#L17)
+[link updateUser function](https://github.com/nshimiye/sails-record-list/blob/master/api/services/DatabaseAccessPrivateUser.js#L34)
 
 * create a dummy user
 ```sh
@@ -75,3 +78,5 @@ curl http://localhost:3000/user/create?name=mars&username=mars@fusemachines.com
 ```sh
 curl http://localhost:3000/user/1/dailyJoke
 ```
+
+Now the joke data will be added to the user's joke list!
