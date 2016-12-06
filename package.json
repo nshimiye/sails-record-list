@@ -1,9 +1,9 @@
 {
-  "name": "sailsjs-handlebars-app",
+  "name": "sails-record-list",
   "private": true,
-  "version": "0.0.0",
-  "description": "A Sails application with handlebars templating engine",
-  "keywords": [],
+  "version": "1.0.0",
+  "description": "Add new record to a list using sailsjs built-in query language",
+  "keywords": [ "sailsjs", "database", "saving", "list", "update" ],
   "dependencies": {
     "ejs": "2.3.4",
     "grunt": "1.0.1",
@@ -31,7 +31,7 @@
   "main": "app.js",
   "repository": {
     "type": "git",
-    "url": "git@github.com:nshimiye/sailsjs-handlebars-app.git"
+    "url": "git@github.com:nshimiye/sails-record-list.git"
   },
   "author": "mars",
   "license": "MIT"
