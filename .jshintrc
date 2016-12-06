@@ -1,4 +1,9 @@
 {
+  "predef": [
+    "sails",
+    "DailyJokeService",
+    "DatabaseAccessService"
+  ],
   "node": true,
   "esnext": true,
   "bitwise": true,

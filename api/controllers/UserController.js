@@ -2,7 +2,7 @@
 * @Author: mars
 * @Date:   2016-12-05T17:01:16-05:00
 * @Last modified by:   mars
-* @Last modified time: 2016-12-05T18:22:27-05:00
+* @Last modified time: 2016-12-05T18:35:26-05:00
 */
 'use strict';
 /**
@@ -25,6 +25,7 @@ module.exports = {
 	dailyJokes(req, res) {
 		let ok = true;
 		// @TODO
+		// return DatabaseAccessService.user
 		res.send(200, { ok, query: req.query });
 	}
 };

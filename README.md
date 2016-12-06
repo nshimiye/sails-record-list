@@ -1,3 +1,10 @@
+<!--
+@Author: mars
+@Date:   2016-12-05T17:00:57-05:00
+@Last modified by:   mars
+@Last modified time: 2016-12-05T18:26:40-05:00
+-->
+
 # sails-record-list
 Add new record to a list using sailsjs built-in query language
 
@@ -8,6 +15,7 @@ User wants to receive one joke everyday.
 
 * create a sails app
 ```
+sails new sails-record-list
 ```
 
 * create a user api
@@ -25,9 +33,13 @@ sails generate model dailyJoke content:string author:string source:string meta:j
 ```
 
 * Add logic to fetch one joke for a given user
-```
+```javascript
+// api/Controllers/DailyJokeController.js
+
 ```
 
 * Add logic to save a joke in db
-```
+```javascript
+// api/Controllers/UserController.js
+
 ```

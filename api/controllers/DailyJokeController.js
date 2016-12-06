@@ -2,7 +2,7 @@
 * @Author: mars
 * @Date:   2016-12-05T17:32:45-05:00
 * @Last modified by:   mars
-* @Last modified time: 2016-12-05T18:22:39-05:00
+* @Last modified time: 2016-12-05T19:16:09-05:00
 */
 
 'use strict';
@@ -30,10 +30,15 @@ module.exports = {
 	 */
 	user(req, res) {
 		let ok = true;
-		// @TODO
-		// @TODO
-		// @TODO
-		// @TODO
-		res.send(200, { ok, query: req.query });
+		let userId = req.query.id;
+		DailyJokeService.getRandom()
+		.then(jokeObject => {
+			let content = jokeObject.content, author = jokeObject.author, source = jokeObject.source;
+			return DatabaseAccessService.dailyJokeSaveByUserId(userId, { content, author, source });
+		})
+		.then(jokeObject => {
+			return res.send(200, { ok, joke: jokeObject.content, from: jokeObject.author });
+		})
+		.catch(e => res.send(500, { ok: false, message: (e.message || 'unknown error') }));
 	}
 };
