@@ -1,4 +1,11 @@
 /**
+* @Author: mars
+* @Date:   2016-12-05T17:01:16-05:00
+* @Last modified by:   mars
+* @Last modified time: 2016-12-05T20:01:23-05:00
+*/
+
+/**
  * Route Mappings
  * (sails.config.routes)
  *
@@ -34,6 +41,11 @@ module.exports.routes = {
 
   '/': {
     view: 'homepage'
+  },
+
+  'GET /user/:id/dailyJoke': {
+    controller: 'UserController',
+    action: 'dailyJoke'
   }
 
   /***************************************************************************

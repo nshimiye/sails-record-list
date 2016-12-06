@@ -1,6 +1,11 @@
 {
   "predef": [
     "sails",
+
+    "User",
+    "DailyJoke",
+
+    "UtilityService",
     "DailyJokeService",
     "DatabaseAccessService"
   ],

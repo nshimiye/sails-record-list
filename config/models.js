@@ -1,4 +1,13 @@
 /**
+* @Author: mars
+* @Date:   2016-12-05T17:01:16-05:00
+* @Last modified by:   mars
+* @Last modified time: 2016-12-05T20:12:00-05:00
+*/
+
+
+
+/**
  * Default model configuration
  * (sails.config.models)
  *
@@ -27,7 +36,8 @@ module.exports.models = {
   * See http://sailsjs.org/#!/documentation/concepts/ORM/model-settings.html  *
   *                                                                          *
   ***************************************************************************/
+  migrate: 'drop'
   // migrate: 'alter'
-  migrate: 'safe'
+  // migrate: 'safe'
 
 };

@@ -2,7 +2,7 @@
 @Author: mars
 @Date:   2016-12-05T17:00:57-05:00
 @Last modified by:   mars
-@Last modified time: 2016-12-05T18:26:40-05:00
+@Last modified time: 2016-12-05T20:23:21-05:00
 -->
 
 # sails-record-list
@@ -10,6 +10,9 @@ Add new record to a list using sailsjs built-in query language
 
 # Scenario
 User wants to receive one joke everyday.
+
+# End goal
+Create a log of jokes owned by a specific user
 
 # Step by step
 
@@ -40,6 +43,35 @@ sails generate model dailyJoke content:string author:string source:string meta:j
 
 * Add logic to save a joke in db
 ```javascript
-// api/Controllers/UserController.js
+// [api/Controllers/UserController.js]()
 
+...
+return DatabaseAccessService.userSaveJoke(userId, { content, author, source });
+...
+
+```
+[link to complete function]()
+```javascript
+// [api/services/DatabaseAccessPrivateUser.js]()
+
+...
+User.findOne({ id }).populate('dailyJokes')
+...
+foundUser.dailyJokes.add(jokeData);
+return this.updateUser(foundUser)
+...
+
+```
+[link to complete function]()
+[link updateUser function]()
+
+* create a dummy user
+```sh
+# GET request
+curl http://localhost:3000/user/create?name=mars&username=mars@fusemachines.com
+```
+
+* request a joke
+```sh
+curl http://localhost:3000/user/1/dailyJoke
 ```
