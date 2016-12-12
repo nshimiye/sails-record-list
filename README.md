@@ -65,7 +65,7 @@ return this.updateUser(foundUser)
 ...
 
 ```
-[link to complete function](https://github.com/nshimiye/sails-record-list/blob/master/api/services/DatabaseAccessPrivateUser.js#L17)
+[link to complete function](https://github.com/nshimiye/sails-record-list/blob/master/api/services/DatabaseAccessPrivateUser.js#L17) |
 [link updateUser function](https://github.com/nshimiye/sails-record-list/blob/master/api/services/DatabaseAccessPrivateUser.js#L34)
 
 * create a dummy user
