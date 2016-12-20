@@ -4,7 +4,6 @@
 @Last modified by:   mars
 @Last modified time: 2016-12-05T20:34:47-05:00
 -->
-
 # sails-record-list
 Add new record to a list using sailsjs built-in query language
 
@@ -71,12 +70,12 @@ return this.updateUser(foundUser)
 * create a dummy user
 ```sh
 # GET request
-curl http://localhost:3000/user/create?name=mars&username=mars@fusemachines.com
+curl http://localhost:1337/user/create?name=mars&username=mars@fusemachines.com
 ```
 
 * request a joke
 ```sh
-curl http://localhost:3000/user/1/dailyJoke
+curl http://localhost:1337/user/1/dailyJoke
 ```
 
 Now the joke data will be added to the user's joke list!
