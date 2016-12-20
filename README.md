@@ -98,7 +98,7 @@ getRandom() {
 ```
 [link to complete function](https://github.com/nshimiye/sails-record-list/blob/master/api/services/DailyJokeService.js#L12) 
 
-
+* Extra - create [a utility service](https://github.com/nshimiye/sails-record-list/blob/master/api/services/UtilityService.js) to help with database querying.
 
 * update a new route to service the dailyJoke request
 ```javascript
