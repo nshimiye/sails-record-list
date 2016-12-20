@@ -76,6 +76,8 @@ getRandom() {
   return Promise.resolve({ content, author, source });
 }
 ...
+// i use this npm package (one-liner-joke) as a joke source
+// so if you copy my code, you will have to add it "npm install one-liner-joke --save"
 
 ```
 [link to complete function](https://github.com/nshimiye/sails-record-list/blob/master/api/services/DailyJokeService.js#L12) 
