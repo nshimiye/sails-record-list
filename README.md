@@ -67,6 +67,12 @@ return this.updateUser(foundUser)
 [link to complete function](https://github.com/nshimiye/sails-record-list/blob/master/api/services/DatabaseAccessPrivateUser.js#L17) |
 [link updateUser function](https://github.com/nshimiye/sails-record-list/blob/master/api/services/DatabaseAccessPrivateUser.js#L34)
 
+* update a new route to service the dailyJoke request
+```javascript
+// config/routes.js
+
+```
+
 * create a dummy user
 ```sh
 # GET request
