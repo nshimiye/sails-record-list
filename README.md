@@ -70,7 +70,10 @@ return this.updateUser(foundUser)
 * update a new route to service the dailyJoke request
 ```javascript
 // config/routes.js
-
+  'GET /user/:id/dailyJoke': {
+    controller: 'UserController',
+    action: 'dailyJoke'
+  }
 ```
 
 * create a dummy user
