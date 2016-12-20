@@ -5,9 +5,8 @@
 * @Last modified time: 2016-12-05T19:14:40-05:00
 */
 'use strict';
-let DailyJokeAccess = require('./DatabaseAccessPrivateDailyJoke.js').main;
 let UserAccess = require('./DatabaseAccessPrivateUser.js').main;
 
 // api/services/DatabaseAccessService.js
-const service = Object.assign({}, DailyJokeAccess, UserAccess);
+const service = Object.assign({}, UserAccess);
 module.exports = service;
