@@ -78,7 +78,7 @@ getRandom() {
 ...
 
 ```
-[link to complete function](https://github.com/nshimiye/sails-record-list/blob/master/api/services/DatabaseAccessPrivateUser.js#L17) 
+[link to complete function](https://github.com/nshimiye/sails-record-list/blob/master/api/services/DailyJokeService.js#L12) 
 
 
 
