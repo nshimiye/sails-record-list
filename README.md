@@ -53,6 +53,7 @@ return DatabaseAccessService.userSaveJoke(userId, { content, author, source });
 
 ```
 [link to complete function](https://github.com/nshimiye/sails-record-list/blob/master/api/controllers/UserController.js#L37)
+
 ```javascript
 // api/services/DatabaseAccessPrivateUser.js
 
@@ -66,6 +67,20 @@ return this.updateUser(foundUser)
 ```
 [link to complete function](https://github.com/nshimiye/sails-record-list/blob/master/api/services/DatabaseAccessPrivateUser.js#L17) |
 [link updateUser function](https://github.com/nshimiye/sails-record-list/blob/master/api/services/DatabaseAccessPrivateUser.js#L34)
+```javascript
+// api/services/DailyJokeService.js
+
+...
+getRandom() {
+  // @TODO ping your favorite joke source!
+  return Promise.resolve({ content, author, source });
+}
+...
+
+```
+[link to complete function](https://github.com/nshimiye/sails-record-list/blob/master/api/services/DatabaseAccessPrivateUser.js#L17) 
+
+
 
 * update a new route to service the dailyJoke request
 ```javascript
