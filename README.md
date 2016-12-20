@@ -37,6 +37,22 @@ rm -rf api/models/DailyJoke.js
 sails generate model dailyJoke content:string author:string source:string meta:json
 ```
 
+* Create one-to-many relationship between user and dailyJoke
+```javascript
+// api/models/User.js
+    dailyJokes: {
+      collection: 'dailyJoke',
+      via: 'user'
+    }
+```
+```javascript
+// api/models/DailyJoke.js
+    user: {
+      model: 'user'
+    }
+```
+
+
 * Add logic to fetch one joke for a given user
 ```javascript
 // api/Controllers/DailyJokeController.js
